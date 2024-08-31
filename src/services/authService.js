@@ -2,7 +2,7 @@
 
 import axios from "axios";
 
-const API_URL = "http://localhost:8080/api/";
+const API_URL = "https://vivansh-project-backend.onrender.com/api/";
 
 export const getCsrfToken = async () => {
   const response = await axios.get(API_URL + "csrf-token", {
