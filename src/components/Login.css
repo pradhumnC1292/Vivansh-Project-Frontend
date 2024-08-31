@@ -1,0 +1,98 @@
+.login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #03030b;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.login-container img {
+  width: 100px;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.form-inpt {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+  font-size: 1rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.form-inpt:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(62, 0, 255, 0.5);
+}
+
+.form-inpt select {
+  appearance: none;
+  background-color: #f4f4f4;
+  padding: 12px;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #3e00ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff00c4;
+}
+
+.register-link {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.register-link a {
+  color: #3e00ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .login-container {
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  .login-container h2 {
+    font-size: 1.5rem;
+  }
+}
