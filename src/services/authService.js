@@ -2,10 +2,10 @@
 
 import axios from "axios";
 
-const API_URL = "https://vivansh-project-backend.onrender.com/api/";
+const API_URL = "https://vivansh-project-backend.onrender.com";
 
 export const getCsrfToken = async () => {
-  const response = await axios.get(API_URL + "csrf-token", {
+  const response = await axios.get(API_URL + "/api/csrf-token", {
     withCredentials: true,
   });
   return response.data.csrfToken;
@@ -13,7 +13,7 @@ export const getCsrfToken = async () => {
 
 export const register = async (userData) => {
   const csrfToken = await getCsrfToken();
-  const response = await axios.post(API_URL + "register", userData, {
+  const response = await axios.post(API_URL + "/api/register", userData, {
     withCredentials: true,
     headers: {
       "X-CSRF-Token": csrfToken,
@@ -24,7 +24,7 @@ export const register = async (userData) => {
 
 export const login = async (userData) => {
   const csrfToken = await getCsrfToken();
-  const response = await axios.post(API_URL + "login", userData, {
+  const response = await axios.post(API_URL + "/api/login", userData, {
     withCredentials: true,
     headers: {
       "X-CSRF-Token": csrfToken,
@@ -36,7 +36,7 @@ export const login = async (userData) => {
 export const logout = async () => {
   const csrfToken = await getCsrfToken();
   const response = await axios.post(
-    API_URL + "logout",
+    API_URL + "/api/logout",
     {},
     {
       withCredentials: true,

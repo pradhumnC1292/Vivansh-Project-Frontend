@@ -6,20 +6,20 @@ import "./Login.css";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [role, setRole] = useState("User"); 
+  const [role, setRole] = useState("User");
   const { handleLogin } = useContext(AuthContext);
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await handleLogin(email, password, role); 
+    await handleLogin(email, password, role);
     navigate("/dashboard");
   };
 
   return (
     <div className="login-container">
       <h2>Login</h2>
-      <img src="../src/assets/login01.jpg" alt="Login" />
+      <img src="login01.jpg" alt="Login" />
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="email">Email:</label>

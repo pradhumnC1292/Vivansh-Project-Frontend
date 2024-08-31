@@ -1,6 +1,6 @@
 /* Register container */
 .register-container {
-  max-width: 25%;
+  max-width: 30%;
   margin: 50px auto;
   padding: 20px 20px;
   background-color: #03030b;
@@ -18,7 +18,7 @@
 .register-container img {
   width: 100px;
   position: relative;
-  left: 35%;
+  left: 3%;
 }
 
 .form-group {

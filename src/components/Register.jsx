@@ -26,7 +26,7 @@ const Register = () => {
   return (
     <div className="register-container">
       <h2>Register</h2>
-      <img src="../src/assets/signin.png" alt="Sign in" />
+      <img src="signin.png" alt="Sign in" />
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="name">Name</label>
